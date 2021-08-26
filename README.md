@@ -1,2 +1,2 @@
 # Web-Development
-![](/index.html)
+https://atchu98.github.io/Web-Development/index
