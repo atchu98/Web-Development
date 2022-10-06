@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Lesson</title>
+    <style>
+        .highlight{
+            color:red;
+            background-color:yellow;
+        }
+        .normal{
+            color:black;
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting" class="normal"
+        onmouseover="ChangeStyle(this, 'normal','highlight')"
+        onmouseout="ChangeStyle(this, 'highlight','normal')">
+        Javascript Demo
+    </h1>
+    <button onclick="SayHello()">Press Me</button><br />
+    <p id="objectDemo"></p>
+    <div id="MySong">
+        <button onclick="AddALine(document.getElementById('MySong'))">Add a line</button>
+        <button onclick="DeleteLastLine(document.getElementById('MySong'))">Delete last line</button>
+    </div>
+    <script src="JavaScriptDemo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+    <script>
+        cathy = new Person("Cathy", "French", 35);
+        document.getElementById("objectDemo").innerHTML = cathy.getFullName() + " " + cathy.age;
+    </script>
+
+
+
+</body>
+</html>
